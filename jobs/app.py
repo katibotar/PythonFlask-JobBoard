@@ -1,12 +1,12 @@
 import sqlite3
 from flask import Flask, render_template, g
 
-#PATH = 'db/jobs.sqlite'
+PATH = 'db/jobs.sqlite'
 
 app = Flask(__name__)
 
 
-"""def open_connection():
+def open_connection():
     connection = getattr(g, _connection, None)
     if connection == None:
         connection = g._connection = sqlite3.connect(PATH)
@@ -14,7 +14,7 @@ app = Flask(__name__)
     return connection
 
 
-def execute_sql(sql, values=(), commit=False, single=False):
+"""def execute_sql(sql, values=(), commit=False, single=False):
     connection = open_connection()
     cursor = connection.execute(sql, values)
     if commit == True:
@@ -29,8 +29,9 @@ def execute_sql(sql, values=(), commit=False, single=False):
 def close_connection(exception):
     connection = getattr(g, '_connection', None)
     if connection is not None:
-        connection.close()
-        """
+        connection.close()      
+
+"""
 
 
 @app.route('/')
