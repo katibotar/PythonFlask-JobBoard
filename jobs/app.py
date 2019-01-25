@@ -26,11 +26,10 @@ def execute_sql(sql, values=(), commit=False, single=False):
     return results
 
 
-"""def close_connection(exception):
+def close_connection(exception):
     connection = getattr(g, '_connection', None)
     if connection is not None:
         connection.close()      
-"""
 
 
 
