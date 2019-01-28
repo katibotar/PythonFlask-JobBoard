@@ -11,6 +11,9 @@
   </head>
   <body>
     <div>{% block content %}
+         <link  rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css')}}">
+     <link  rel="stylesheet" href="{{ url_for('static', filename='css/app.css')}}">
+     <link  rel="stylesheet" href="https://use.fontawsome.com/releases/v5.2.0/css/all.css">
       {% endblock %}</div>
     <div
       {% block footer %}
